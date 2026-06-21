@@ -6,10 +6,18 @@
 <title>Himanshu &amp; Shweta — Wedding</title>
 <meta name="theme-color" content="#f6f3ee" />
 <meta name="description" content="Himanshu & Shweta are getting married — 6th & 7th July 2026, Shagun Hotel & Resorts, Khandwa, Madhya Pradesh." />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="apple-touch-icon" href="favicon.png" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Himanshu & Shweta — Wedding" />
-<meta property="og:description" content="Join us to celebrate — 6th & 7th July 2026, Khandwa, Madhya Pradesh." />
-<meta property="og:image" content="YOUR_PREVIEW_IMAGE_URL_HERE" />
+<meta property="og:url" content="https://tinyurl.com/HimanshuWedsShweta" />
+<meta property="og:title" content="Himanshu & Shweta — Wedding Invitation" />
+<meta property="og:description" content="With the blessings of the Almighty, join us to celebrate — 6th & 7th July 2026, Shagun Hotel & Resorts, Khandwa, MP." />
+<!-- Share preview. After hosting, for reliable WhatsApp/social previews set this to the FULL absolute URL, e.g. https://yourdomain.com/og-image.jpg -->
+<meta property="og:image" content="og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="og-image.jpg" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,7 +50,7 @@ img{display:block;max-width:100%;}
 .wrap{max-width:920px;margin:0 auto;padding:0 26px;}
 section{position:relative;}
 /* ---------- scroll snap ---------- */
-.hero,.families,.events,.venue,.rsvp,.footer{scroll-snap-align:start;}
+.hero,.families,.events,.venue,.footer{scroll-snap-align:start;}
 .families,.venue{min-height:100svh;display:flex;flex-direction:column;justify-content:center;}
 
 /* ---------- universal section heading ---------- */
@@ -61,7 +69,8 @@ section{position:relative;}
    ================================================================ */
 .header{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:50;display:flex;align-items:center;justify-content:center;transition:background .4s ease,box-shadow .4s ease,color .4s ease;color:var(--white);}
 .header.solid{background:rgba(246,243,238,.92);backdrop-filter:saturate(140%) blur(8px);color:var(--ink);box-shadow:0 1px 0 var(--line);}
-.header .brand{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:1.15rem;letter-spacing:.42em;padding-left:.42em;}
+.header .brand{font-family:'Mr De Haviland',cursive;font-size:1.95rem;line-height:1;opacity:0;transform:translateY(-3px);transition:opacity .45s ease,transform .45s ease;}
+.header.solid .brand{opacity:1;transform:translateY(0);}
 .burger{position:absolute;left:18px;top:50%;transform:translateY(-50%);width:30px;height:22px;display:flex;flex-direction:column;justify-content:space-between;background:none;border:0;cursor:pointer;padding:3px 0;}
 .burger span{display:block;height:1.5px;width:100%;background:currentColor;transition:transform .35s ease,opacity .25s ease;}
 .header .burger{color:inherit;}
@@ -77,11 +86,11 @@ section{position:relative;}
    HERO
    ================================================================ */
 .hero{height:100vh;height:100svh;min-height:560px;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;color:var(--white);
-  background:#3a352e url("couple-hero.jpg") center 28% / cover no-repeat;}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,15,.42),rgba(20,18,15,0) 26%,rgba(20,18,15,0) 58%,rgba(20,18,15,.55));}
-.hero-top{position:relative;z-index:2;margin-top:calc(var(--nav-h) + 5vh);padding:0 22px;}
+  background:#2a2620 url("couple-hero.jpg") center 18% / cover no-repeat;}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,15,13,.55) 0%,rgba(16,15,13,.20) 27%,rgba(16,15,13,0) 47%,rgba(16,15,13,0) 64%,rgba(16,15,13,.5) 100%);}
+.hero-top{position:relative;z-index:2;margin-top:calc(var(--nav-h) + 3.5vh);padding:0 22px;}
 .hero-logo-img{max-width:200px;margin:0 auto 4px;filter:drop-shadow(0 2px 12px rgba(0,0,0,.4));}
-.hero-mono{font-family:'Mr De Haviland',cursive;font-size:clamp(4.6rem,21vw,7rem);line-height:.8;color:var(--white);text-shadow:0 3px 22px rgba(0,0,0,.45);}
+.hero-mono{font-family:'Mr De Haviland',cursive;font-size:clamp(3.7rem,16vw,5.4rem);line-height:.8;color:var(--white);text-shadow:0 3px 22px rgba(0,0,0,.5);}
 .hero-names{font-family:'Cormorant Garamond',serif;font-weight:400;text-transform:uppercase;letter-spacing:.26em;font-size:clamp(1.15rem,5vw,1.7rem);margin-top:18px;padding-left:.26em;text-shadow:0 2px 14px rgba(0,0,0,.5);}
 .hero-meta{font-family:'Jost',sans-serif;text-transform:uppercase;letter-spacing:.3em;font-size:clamp(.62rem,2.6vw,.74rem);margin-top:14px;opacity:.95;text-shadow:0 2px 10px rgba(0,0,0,.6);}
 .hero-meta .b{margin:0 8px;opacity:.7;}
@@ -101,7 +110,7 @@ section{position:relative;}
 .fam-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:30px 60px;margin-top:34px;}
 .fam{max-width:280px;}
 .fam .who{font-family:'Cormorant Garamond',serif;text-transform:uppercase;letter-spacing:.22em;font-size:1.25rem;padding-left:.22em;}
-.fam .rel{font-family:'Mr De Haviland',cursive;font-size:1.95rem;line-height:1;color:var(--muted);margin:2px 0 0;}
+.fam .rel{font-family:'Mr De Haviland',cursive;font-size:1.95rem;line-height:1;color:var(--gold-accent);margin:2px 0 0;}
 .fam .of{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:1.12rem;color:var(--ink);margin-top:1px;line-height:1.45;}
 .fam-amp{display:flex;align-items:center;font-family:'Mr De Haviland',cursive;font-size:2.6rem;color:var(--muted);}
 
@@ -167,7 +176,7 @@ section{position:relative;}
    FOOTER
    ================================================================ */
 .footer{padding:78px 0 64px;text-align:center;background:var(--dark);color:var(--bg);}
-.footer .f-mono{font-family:'Mr De Haviland',cursive;font-size:4rem;line-height:.8;color:var(--bg);}
+.footer .f-mono{font-family:'Mr De Haviland',cursive;font-size:4.4rem;line-height:.8;color:var(--gold-accent);}
 .footer .f-line{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.3rem,5vw,1.7rem);margin-top:18px;}
 .footer .f-names{font-family:'Cormorant Garamond',serif;text-transform:uppercase;letter-spacing:.26em;font-size:.95rem;margin-top:26px;padding-left:.26em;}
 .footer .f-date{font-family:'Jost',sans-serif;text-transform:uppercase;letter-spacing:.28em;font-size:.64rem;color:rgba(255,255,255,.6);margin-top:10px;}
@@ -185,16 +194,22 @@ section{position:relative;}
 .footer .f-eyebrow{font-family:'Jost',sans-serif;text-transform:uppercase;letter-spacing:.4em;font-size:.64rem;color:rgba(255,255,255,.55);}
 .footer .f-invite{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.2rem,4.6vw,1.5rem);margin-top:12px;color:var(--bg);}
 .relatives{display:grid;grid-template-columns:1fr;gap:9px 36px;max-width:580px;margin:22px auto 0;}
-.relatives div{font-family:'Cormorant Garamond',serif;font-size:1.06rem;color:rgba(255,255,255,.82);}
+.relatives div,.relatives-main div{font-family:'Playfair Display',serif;font-weight:400;font-size:1.02rem;letter-spacing:.01em;color:rgba(255,255,255,.9);line-height:1.85;}
+.relatives-main{margin:18px auto 2px;max-width:560px;}
+.f-connector{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.06rem;color:rgba(255,255,255,.6);margin:24px 0 4px;}
 .firm{margin-top:30px;display:flex;flex-direction:column;gap:7px;}
 .firm-label{font-family:'Jost',sans-serif;text-transform:uppercase;letter-spacing:.3em;font-size:.58rem;color:rgba(255,255,255,.5);}
 .firm-name{font-family:'Cormorant Garamond',serif;text-transform:uppercase;letter-spacing:.24em;font-size:1.3rem;color:var(--bg);padding-left:.24em;}
 .f-sep{width:64px;height:1px;background:rgba(255,255,255,.25);margin:36px auto;}
 @media(min-width:560px){.relatives{grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,auto);grid-auto-flow:column;column-gap:34px;justify-items:center;}}
 /* ---------- fancier display typeface ---------- */
-.sec-h,.hero-names,.brand,.menu a,.fam .who,.ev-name,.venue-name,.f-names,.firm-name,.cd-num{font-family:'Playfair Display',serif;}
+.sec-h,.hero-names,.menu a,.fam .who,.ev-name,.venue-name,.f-names,.firm-name,.cd-num{font-family:'Playfair Display',serif;}
 .hero-names{font-weight:500;}
 .sec-h{font-weight:500;}
+/* ---------- footer main family ---------- */
+.main-fam{margin-top:18px;}
+.mf-names{font-family:'Playfair Display',serif;font-weight:500;text-transform:uppercase;letter-spacing:.16em;font-size:1.2rem;color:var(--bg);padding-left:.16em;}
+.mf-sub{font-family:'Mr De Haviland',cursive;font-size:1.75rem;color:var(--gold-accent);margin-top:2px;line-height:1;}
 
 /* ================================================================
    REVEAL
@@ -215,7 +230,7 @@ section{position:relative;}
 <!-- ===================== HEADER ===================== -->
 <header class="header" id="header">
   <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
-  <div class="brand">H &amp; S</div>
+  <div class="brand">H&amp;S</div>
 </header>
 
 <!-- ===================== MENU OVERLAY ===================== -->
@@ -226,7 +241,6 @@ section{position:relative;}
   <a href="#family">Our Families</a>
   <a href="#events">Celebrations</a>
   <a href="#venue">Venue</a>
-  <a href="#rsvp">RSVP</a>
 </nav>
 
 <!-- ===================== HERO ===================== -->
@@ -278,13 +292,13 @@ section{position:relative;}
       <div class="fam reveal d1">
         <div class="who">Himanshu</div>
         <div class="rel">Son of</div>
-        <div class="of">Mrs. Sonam &amp; Late Shree Narendra Tanwani</div>
+        <div class="of">Mrs. Sonam &amp; Late Mr. Narendra Tanwani</div>
       </div>
       <div class="fam-amp reveal d1">&amp;</div>
       <div class="fam reveal d2">
         <div class="who">Shweta</div>
         <div class="rel">Daughter of</div>
-        <div class="of">Mrs. Sadhna &amp; Shree Dayal Budhani</div>
+        <div class="of">Mrs. Sadhna &amp; Mr. Dayal Budhani</div>
       </div>
     </div>
   </div>
@@ -305,27 +319,27 @@ section{position:relative;}
 
     <div class="event reveal">
       <div class="ev-name">Carnival</div>
-      <div class="ev-meta">Monday, July 6, 2026 <span class="sep">/</span> 3:00 PM onwards</div>    </div>
+      <div class="ev-meta">Monday, July 6, 2026 <span class="sep">/</span> 3:00 PM onwards</div></div>
     <div class="ev-divider"></div>
 
     <div class="event reveal">
       <div class="ev-name">Ring Ceremony</div>
-      <div class="ev-meta">Monday, July 6, 2026 <span class="sep">/</span> 9:00 PM onwards</div>    </div>
+      <div class="ev-meta">Monday, July 6, 2026 <span class="sep">/</span> 9:00 PM onwards</div></div>
     <div class="ev-divider"></div>
 
     <div class="event reveal">
       <div class="ev-name">Sehra Bandhan</div>
-      <div class="ev-meta">Tuesday, July 7, 2026 <span class="sep">/</span> 11:00 AM onwards</div>    </div>
+      <div class="ev-meta">Tuesday, July 7, 2026 <span class="sep">/</span> 11:00 AM onwards</div></div>
     <div class="ev-divider"></div>
 
     <div class="event reveal">
       <div class="ev-name">Baraat</div>
-      <div class="ev-meta">Tuesday, July 7, 2026 <span class="sep">/</span> 12:00 PM onwards</div>    </div>
+      <div class="ev-meta">Tuesday, July 7, 2026 <span class="sep">/</span> 12:00 PM onwards</div></div>
     <div class="ev-divider"></div>
 
     <div class="event reveal">
       <div class="ev-name">Reception</div>
-      <div class="ev-meta">Tuesday, July 7, 2026 <span class="sep">/</span> 8:00 PM onwards</div>    </div>
+      <div class="ev-meta">Tuesday, July 7, 2026 <span class="sep">/</span> 8:00 PM onwards</div></div>
 
     <div class="btn-wrap reveal">
       <button class="btn" type="button" id="addAllBtn">
@@ -359,48 +373,21 @@ section{position:relative;}
   </div>
 </section>
 
-<!-- ===================== RSVP ===================== -->
-<section class="rsvp" id="rsvp">
-  <div class="wrap">
-    <p class="eyebrow reveal">We'd Love To See You</p>
-    <h2 class="sec-h reveal">RSVP</h2>
-    <p class="sec-note reveal">Your presence is the only gift we ask for. Whenever you get a moment, do let us know you'll be there.</p>
-    <div class="orn reveal"><i></i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2.5c2.2 4 2.2 6.5 0 10-2.2-3.5-2.2-6 0-10zM12 21.5c-2.2-4-2.2-6.5 0-10 2.2 3.5 2.2 6 0 10zM2.5 12c4-2.2 6.5-2.2 10 0-3.5 2.2-6 2.2-10 0zM21.5 12c-4 2.2-6.5 2.2-10 0 3.5-2.2 6-2.2 10 0z"/><circle cx="12" cy="12" r="1.3" fill="currentColor" stroke="none"/></svg><i class="r"></i></div>
-
-    <form class="rsvp-form reveal d1" id="rsvpForm" autocomplete="on">
-      <div class="field"><label for="guestName">Name(s) <span class="req">*</span></label>
-        <input type="text" id="guestName" name="Name" placeholder="Your name(s)" required /></div>
-      <div class="field"><label for="guestCount">Guests in your party (including you) <span class="req">*</span></label>
-        <input type="number" id="guestCount" name="Guests" min="1" value="1" inputmode="numeric" required /></div>
-      <div class="field"><label for="phone">Contact number <span style="opacity:.55">(optional)</span></label>
-        <input type="tel" id="phone" name="Phone" placeholder="e.g. +91 98765 43210" inputmode="tel" /></div>
-
-      <fieldset class="travel-fs">
-        <div class="leg">Would you like a pickup? <span class="opt">— optional</span></div>
-        <p class="fs-help">Coming by train or flight? If you'd like us to arrange a pickup from the station or airport, just leave your details here. Entirely optional — only if it helps.</p>
-        <div class="field"><label for="mode">Arriving by</label>
-          <select id="mode" name="Mode"><option value="">Select…</option><option>Train</option><option>Flight</option><option>By Road</option><option>Other</option></select></div>
-        <div class="field"><label for="travelInfo">Train / flight details</label>
-          <input type="text" id="travelInfo" name="TravelInfo" placeholder="PNR, flight no., train name/number…" /></div>
-        <div class="field"><label for="arrival">Arrival date &amp; time</label>
-          <input type="datetime-local" id="arrival" name="Arrival" /></div>
-      </fieldset>
-
-      <div class="field"><label for="notes">A note for us (optional)</label>
-        <input type="text" id="notes" name="Notes" placeholder="Dietary needs, a message, anything at all…" /></div>
-
-      <button type="submit" class="btn solid submit-btn" id="submitBtn">Count Me In</button>
-      <p class="form-note">Your reply reaches us right away — we can't wait to see you.</p>
-      <div class="success-msg" id="successMsg"><p>Thank you — your details have been saved.<br>We can't wait to celebrate with you.</p></div>
-    </form>
-  </div>
-</section>
-
 <!-- ===================== FOOTER ===================== -->
 <footer class="footer" id="footer">
   <div class="wrap">
     <p class="f-eyebrow reveal">With Love &amp; Blessings</p>
-    <p class="f-invite reveal">Joyfully inviting you, together with our family</p>
+    <div class="main-fam reveal">
+      <div class="mf-names">Mrs. Varsha &amp; Mr. Girish Tanwani</div>
+      <div class="mf-sub">with their daughter Riya</div>
+    </div>
+    <p class="f-invite reveal">joyfully invite you, together with the Tanwani family</p>
+    <div class="relatives-main reveal d1">
+      <div>Mrs. Rashmi &amp; Late Mr. Hashmat Tanwani</div>
+      <div>Mrs. Kritika &amp; Mr. Sandeep Tanwani</div>
+      <div>Mrs. Richa &amp; Mr. Sanjay Tanwani</div>
+    </div>
+    <p class="f-connector reveal">and, with love, our dear family</p>
     <div class="relatives reveal d1">
       <div>Mrs. Maya &amp; Mr. Ashok Sangtani</div>
       <div>Mrs. Shobha &amp; Mr. Jagdish Kalwani</div>
@@ -434,9 +421,7 @@ section{position:relative;}
 /* ================================================================
    CONFIG — EDIT THESE
    ================================================================ */
-   const GOOGLE_SCRIPT_URL = "YOUR_GOOGLE_SCRIPT_URL_HERE";  /* paste Apps Script /exec URL (sample at bottom) */
-   const SITE_URL = "YOUR_LIVE_INVITE_LINK_HERE";            /* paste this page's public link after hosting   */
-   const HOST_WHATSAPP = "919425950334";                    /* host WhatsApp for RSVP pings (no +)            */
+   const SITE_URL = "https://tinyurl.com/HimanshuWedsShweta";  /* used by "Forward this Invite" */
 
 /* ================================================================
    HEADER + MENU
@@ -481,27 +466,10 @@ section{position:relative;}
    });
 
 /* ================================================================
-   RSVP  →  (1) Google Sheets POST   (2) WhatsApp ping
-   ================================================================ */
-   const form=document.getElementById("rsvpForm"),submitBtn=document.getElementById("submitBtn"),successMsg=document.getElementById("successMsg");
-   form.addEventListener("submit",async function(ev){
-     ev.preventDefault();
-     const data={Name:document.getElementById("guestName").value.trim(),Guests:document.getElementById("guestCount").value.trim(),Phone:document.getElementById("phone").value.trim(),Mode:document.getElementById("mode").value,TravelInfo:document.getElementById("travelInfo").value.trim(),Arrival:document.getElementById("arrival").value.trim(),Notes:document.getElementById("notes").value.trim(),Timestamp:new Date().toLocaleString("en-IN")};
-     submitBtn.disabled=true;submitBtn.textContent="Sending…";
-     try{ if(GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL!=="YOUR_GOOGLE_SCRIPT_URL_HERE"){ await fetch(GOOGLE_SCRIPT_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams(data).toString()}); } }
-     catch(err){ console.warn("Sheets issue:",err); }
-     successMsg.classList.add("show");submitBtn.disabled=false;submitBtn.textContent="Count Me In";
-     const lines=["*New RSVP - Himanshu & Shweta Wedding*","--------------------------------","Name(s): "+(data.Name||"-"),"Guests in party: "+(data.Guests||"1"),"Contact: "+(data.Phone||"-"),"Arrival mode: "+(data.Mode||"-"),"Travel details: "+(data.TravelInfo||"-"),"Arrival: "+(data.Arrival?data.Arrival.replace("T",", "):"-"),"Notes: "+(data.Notes||"-"),"--------------------------------","Sent via the wedding e-invite"];
-     const waURL="https://wa.me/"+HOST_WHATSAPP+"?text="+encodeURIComponent(lines.join("\n"));
-     setTimeout(()=>{window.open(waURL,"_blank");},700);
-     form.reset();document.getElementById("guestCount").value="1";
-   });
-
-/* ================================================================
    FORWARD THIS INVITE
    ================================================================ */
    (function(){
-     const link=(SITE_URL&&SITE_URL!=="YOUR_LIVE_INVITE_LINK_HERE")?"\n\nView the invitation & RSVP:\n"+SITE_URL:"";
+     const link=(SITE_URL&&SITE_URL!=="YOUR_LIVE_INVITE_LINK_HERE")?"\n\nView the invitation:\n"+SITE_URL:"";
      const msg="Himanshu & Shweta are getting married!\n\nWith the blessings of the Almighty, you are warmly invited to celebrate with us.\n\n6th & 7th July 2026\nShagun Hotel & Resorts, Khandwa, MP"+link+"\n\nWith love,\nThe Tanwani & Budhani families";
      document.getElementById("forwardBtn").href="https://wa.me/?text="+encodeURIComponent(msg);
    })();
@@ -513,12 +481,5 @@ section{position:relative;}
    document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
 </script>
 
-<!-- ================================================================
-     SAMPLE GOOGLE APPS SCRIPT
-     Header row:  Timestamp | Name | Guests | Phone | Mode | TravelInfo | Arrival | Notes
-     function doPost(e){var s=SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Sheet1");var p=e.parameter;
-       s.appendRow([p.Timestamp||new Date(),p.Name||"",p.Guests||"",p.Phone||"",p.Mode||"",p.TravelInfo||"",p.Arrival||"",p.Notes||""]);
-       return ContentService.createTextOutput("OK");}
-     ================================================================ -->
 </body>
 </html>
